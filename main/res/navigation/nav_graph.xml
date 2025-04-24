@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph" app:startDestination="@id/loginFragment">
+
+    <fragment android:id="@+id/loginFragment"
+        android:name="com.example.task51citube.ui.LoginFragment">
+        <action android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment"/>
+        <action android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/registerFragment"
+        android:name="com.example.task51citube.ui.RegisterFragment">
+        <action android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"/>
+    </fragment>
+
+    <fragment android:id="@+id/homeFragment"
+        android:name="com.example.task51citube.ui.HomeFragment"
+        android:label="Home"/>
+
+    <fragment android:id="@+id/playerFragment"
+        android:name="com.example.task51citube.ui.PlayerFragment"
+        android:label="Player">
+    <argument
+        android:name="videoId"
+        app:argType="string"
+        android:defaultValue="" />
+    </fragment>
+
+    <fragment android:id="@+id/playlistFragment"
+        android:name="com.example.task51citube.ui.PlaylistFragment"
+        android:label="Playlist"/>
+</navigation>

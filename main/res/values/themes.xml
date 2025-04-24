@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Task51CiTube" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="materialButtonStyle">@style/GrayButton</item>
+    </style>
+
+    <style name="GrayButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/btn_gray_bg</item>
+    </style>
+</resources>
